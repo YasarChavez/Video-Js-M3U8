@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reproductor</title>
+    </head>
+    <body>
+        <div class="reproductor">
+            <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+                <source src="https://s3.amazonaws.com/sffs-upload-steve/v1/hls/sffs-2014-short-012/sffs-2014-short-012.m3u8" type="application/x-mpegURL" />
+            </video>
+        
+            <script src="1.11.2/jquery.min.js"></script>
+            <link href="dist/video-js.css" rel="stylesheet" />
+            <script src="dist/video.js"></script>
+            <script src="dist/videojs-flash.js"></script>
+            <script src="dist/videojs-contrib-hls.js"></script>
+        </div>
+        <script src="7.14.3/video.min.js"></script>
+        <!-- <script>
+            // Configuración de Video.js
+            var player = videojs("my-video");
+            player.play(); // Auto-reproducir el video al cargar la página
+        </script> -->
+        <script src="script.js"></script>
+    </body>
+</html>
